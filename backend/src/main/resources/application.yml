@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Wexa
+
+  neo4j:
+    uri: ${COGNODB_URI}
+    authentication:
+      username: ${COGNODB_USER}
+      password: ${COGNODB_PASSWORD}
+    database: neo4j
+
+  data:
+    neo4j:
+      database: neo4j
+
+logging:
+  level:
+    org.springframework.data.neo4j: DEBUG
+    org.neo4j.driver: DEBUG
