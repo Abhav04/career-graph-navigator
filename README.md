@@ -111,9 +111,10 @@ Project: 3, Skill: 11.
 ### 3. Configure environment variables
 
 In `backend/`, create a `.env` file (never committed — see `.gitignore`):
+
 COGNODB_URI=bolt+s://<your-instance-id>.databases.cognodb.cloud
-COGNODB_USER=cognodb
-COGNODB_PASSWORD=<your-password>
+, COGNODB_USER=cognodb
+, COGNODB_PASSWORD=<your-password>
 
 ### 4. Run the backend
 
