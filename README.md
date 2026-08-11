@@ -9,6 +9,7 @@ learning path to becoming an AI Engineer?"*
 
 **Live demo:** https://career-graph-navigator.vercel.app/
 **Backend API:** https://career-graph-navigator.onrender.com
+**Loom Video:** https://drive.google.com/file/d/19Qg3OSYC_nrvnfKBtJXz232U_7av0OUP/view?usp=sharing
 
 ## Why a graph database?
 
