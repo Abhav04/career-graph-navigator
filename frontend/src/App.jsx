@@ -4,6 +4,7 @@ import {
   fetchJobs,
   fetchGapAnalysis,
   fetchShortestPath,
+  API_BASE,
 } from "./api/careerPathApi";
 import PersonJobSelector from "./components/PersonJobSelector";
 import SkillGapPanel from "./components/SkillGapPanel";
@@ -41,7 +42,7 @@ function App() {
     try {
       // Fetch health to get active database name and status
       try {
-        const healthRes = await fetch("http://localhost:8080/api/health");
+        const healthRes = await fetch(`${API_BASE}/health`);
         if (healthRes.ok) {
           const healthJson = await healthRes.json();
           setDbName(healthJson.database || "neo4j");
@@ -202,8 +203,8 @@ function App() {
             <h3>Service Connection Refused</h3>
             <p>
               The frontend application is unable to reach the Wexa backend
-              service on <code>http://localhost:8080</code>. Verify the Spring
-              Boot microservice is compiled and actively running.
+              service on <code>{API_BASE}</code>. Verify the backend
+              service is active and running.
             </p>
             <button className="btn btn-primary" onClick={loadInitialData}>
               Retry Core Handshake
